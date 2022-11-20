@@ -14,7 +14,7 @@ defmodule ZgsmBot.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {ZgsmBot, []},
+      mod: {ZgsmBot.Application, []},
       extra_applications: [:logger]
     ]
   end
@@ -23,7 +23,8 @@ defmodule ZgsmBot.MixProject do
   defp deps do
     [
       {:websockex, "~> 0.4.3"},
-      {:jason, "~> 1.4"}
+      {:jason, "~> 1.4"},
+      {:quantum, "~> 3.0"}
     ]
   end
 end
